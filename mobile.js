@@ -134,3 +134,9 @@ const installApp = () => {
 
   deferredPrompt.prompt()
 }
+
+const installBtn = document.querySelector('.installbtn');
+
+installBtn.addEventListener('click', function () {
+  installApp();
+})

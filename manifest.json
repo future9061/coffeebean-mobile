@@ -1,0 +1,26 @@
+{
+  "name": "coffeebean",
+  "short_name": "coffeebean",
+  "theme_color": "#4a2516",
+  "background_color": "#ffffff",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "img/pwaicon.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "img/pwaicon192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "img/pwaicon512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ]
+}

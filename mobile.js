@@ -73,53 +73,34 @@ document.querySelector(".fa-xmark").addEventListener("click", function () {
   asideMenu.style.left = "-300px";
 });
 
-let dottBtn1 = document.querySelector(".dott1");
-let dottBtn2 = document.querySelector(".dott2");
-let dottBtn3 = document.querySelector(".dott3");
 
-let sliderFirst = document.querySelector(".firstSlider");
+const slide1Btn = document.querySelectorAll(".play-icon1 > li");
+const slider1 = document.querySelector(".slider1");
+const sliderItem1 = document.querySelector('.slider1 > div');
+let moveValue = (sliderItem1.offsetWidth * 4) + 30;
 
-dottBtn1.addEventListener("click", function () {
-  sliderFirst.style.marginLeft = "0";
-});
 
-dottBtn2.addEventListener("click", function () {
-  sliderFirst.style.marginLeft = "-640px";
-});
+slide1Btn.forEach((elem, idx) => {
+  elem.addEventListener('click', function (e) {
+    if (e.target === elem) {
+      slider1.style.transform = `translateX(-${moveValue * idx}px)`
+    }
+  })
+})
 
-dottBtn3.addEventListener("click", function () {
-  sliderFirst.style.marginLeft = "-1280px";
-});
+const slide2Btn = document.querySelectorAll('.play-icon2 > li');
+const slider2 = document.querySelector(".image_slider2 > ul");
+const sliderItem2 = document.querySelector(".image_slider2 > ul > div");
+let moveValue2 = (sliderItem2.offsetWidth * 2) + 20;
 
-let sliderBtn1 = document.querySelector(".dotted1"),
-  sliderBtn2 = document.querySelector(".dotted2"),
-  sliderBtn3 = document.querySelector(".dotted3"),
-  sliderBtn4 = document.querySelector(".dotted4"),
-  sliderBtn5 = document.querySelector(".dotted5"),
-  sliderBtn6 = document.querySelector(".dotted6"),
-  secondSlider = document.querySelector(".secondSlider");
-sliderBtn1.addEventListener("click", function () {
-  secondSlider.style.marginLeft = "0";
-});
-sliderBtn2.addEventListener("click", function () {
-  secondSlider.style.marginLeft = "-640px";
-});
+slide2Btn.forEach((elem, idx) => {
+  elem.addEventListener('click', function (e) {
+    if (e.target === elem) {
+      slider2.style.transform = `translateX(-${moveValue2 * idx}px)`
+    }
+  })
+})
 
-sliderBtn3.addEventListener("click", function () {
-  secondSlider.style.marginLeft = "-1280px";
-});
-
-sliderBtn4.addEventListener("click", function () {
-  secondSlider.style.marginLeft = "-1920px";
-});
-
-sliderBtn5.addEventListener("click", function () {
-  secondSlider.style.marginLeft = "-2560px";
-});
-
-sliderBtn6.addEventListener("click", function () {
-  secondSlider.style.marginLeft = "-3200px";
-});
 
 
 //pwa 설치 버튼

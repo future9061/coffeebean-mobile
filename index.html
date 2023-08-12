@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="manifest" href="manifest.json">
+  <!--pwa가 safari에 인식되게-->
+  <link rel="apple-touch-icon" href="touch-icon-iphone.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="touch-icon-ipad.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="touch-icon-ipad-retina.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="touch-icon-iphone-retina.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="mobile.css" />
+  <link rel="icon" href="/img/favicon.png">
+  <script defer src="mobile.js"></script>
+  <title>coffeebean PWA</title>
+</head>
+
+<body>
+
+  <div class="black-bg hide-bg">
+
+
+  </div>
+
+
+  <div class="container">
+    <header>
+      <div class="top burger">
+        <ul>
+          <li class="bar"></li>
+          <li class="bar"></li>
+          <li class="bar"></li>
+        </ul>
+      </div>
+      <div class="top logo"></div>
+      <div class="top icon1">
+        <div class="close-icon hide-button"><img src="img/close.png"></div>
+      </div>
+
+      <div class="top icon2"></div>
+    </header>
+    <main>
+      <div class="progress_wrap">
+        <div class="progress-bar"></div>
+      </div>
+
+      <div class="img1">
+        <img src="./img/main-Img01.jpg" alt="main-banner">
+      </div>
+      <div class="img2">
+        <img src="./img/banner.jpg" alt="sub-banner">
+      </div>
+      <div class="main_box1">
+        <h4 class="box-title">MD'S PICK</h4>
+        <div class="image_slider1">
+          <ul class="slider1">
+            <div>
+              <div class="slide-img"><img src="/img/1.jpg" alt="product1"></div>
+              <span class="title">파미그레네이트 블루베리티</span>
+              <span class="price">2,300원</span>
+            </div>
+            <div>
+              <div class="slide-img "><img src="/img/2.jpg" alt="product2"></div>
+              <span class="title">커피빈 바닐라 라테 8T</span>
+              <span class="price">45,000원</span>
+            </div>
+            <div>
+              <div class="slide-img"><img src="/img/2-1.jpg" alt="product2"></div>
+              <span class="title">나인웨어 피크닉</span>
+              <span class="price">32,000원</span>
+            </div>
+            <div>
+              <div class="slide-img "><img src="/img/2-2.jpg" alt="product2"></div>
+              <span class="title">파미그레네이트 블루베리티</span>
+              <span class="price">2,300원</span>
+            </div>
+            <div>
+              <div class="slide-img "><img src="/img/2-3.jpg" alt="product2"></div>
+              <span class="title">커피빈 바닐라 라테 8T</span>
+              <span class="price">45,000원</span>
+            </div>
+            <div>
+              <div class="slide-img "><img src="/img/2-4.jpg" alt="product2"></div>
+              <span class="title">나인웨어 피크닉</span>
+              <span class="price">32,000원</span>
+            </div>
+            <div>
+              <div class="slide-img "><img src="/img/2-5.jpg" alt="product2"></div>
+              <span class="title">파미그레네이트 블루베리티</span>
+              <span class="price">2,300원</span>
+            </div>
+            <div>
+              <div class="slide-img "><img src="/img/2-6.jpg" alt="product2"></div>
+              <span class="title">커피빈 바닐라 라테 8T</span>
+              <span class="price">45,000원</span>
+            </div>
+            <div>
+              <div class="slide-img "><img src="/img/3.jpg" alt="product2"></div>
+              <span class="title">나인웨어 피크닉</span>
+              <span class="price">32,000원</span>
+            </div>
+            <div>
+              <div class="slide-img "><img src="/img/4.jpg" alt="product2"></div>
+              <span class="title">나인웨어 피크닉</span>
+              <span class="price">32,000원</span>
+            </div>
+          </ul>
+          <div>
+            <ul class="play-icon1">
+              <li></li>
+              <li></li>
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="main_box2">
+        <h4 class="box-title mt-3 tb-3">What's new</h4>
+        <div class="image_slider2">
+          <ul>
+            <div><img src="img/2-1.jpg" alt="product2"></div>
+            <div><img src="img/2-2.jpg" alt="product2"></div>
+            <div><img src="img/2-3.jpg" alt="product2"></div>
+            <div><img src="img/2-4.jpg" alt="product2"></div>
+            <div><img src="img/2-5.jpg" alt="product2"></div>
+            <div><img src="img/2-6.jpg" alt="product2"></div>
+          </ul>
+        </div>
+        <div>
+          <ul class="play-icon2">
+            <li></li>
+            <li></li>
+            <li></li>
+          </ul>
+        </div>
+
+        <div class="purple">
+          <h5 class="purple_h5 mt-3">#커피빈코리아 #커피빈맛있다 #커피빈사랑해</h5>
+          <ul class="img_wrap">
+            <li class="mini1"></li>
+            <li class="mini2"></li>
+            <li class="mini3"></li>
+          </ul>
+          <ul class="img_wrap">
+            <li class="mini4"></li>
+            <li class="mini5"></li>
+            <li class="mini6"></li>
+          </ul>
+          <ul class="img_wrap">
+            <li class="mini7"></li>
+            <li class="mini8"></li>
+            <li class="mini9"></li>
+          </ul>
+          <ul class="img_wrap">
+            <li class="mini10"></li>
+            <li class="mini11"></li>
+            <li class="mini12"></li>
+          </ul>
+
+          <button>OUR INSTAGRAM - @COFFEEBEAN_KR</button>
+        </div>
+
+        <aside class="side_menu w-bg">
+          <ul>
+            <li class="p-bg">검색어를 입력하세요 <span><i class="fa-solid fa-magnifying-glass"></i><i
+                  class="fa-solid fa-xmark"></i></span></li>
+            <li>
+              <ul class="flex-box">
+                <li>로그인</li>
+                <li>고객서비스</li>
+              </ul>
+            </li>
+            <li>BUY ONLINE</li>
+            <li>MEMBER'S CLUB</li>
+            <li>MENU</li>
+            <li>STORE & 서비스</li>
+            <li>THE COFFEE BEAN</li>
+            <li>CBTL</li>
+          </ul>
+          <ul class="plus-icon">
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+            <li><i class="fa-solid fa-plus"></i></li>
+          </ul>
+        </aside>
+    </main>
+
+    <footer>
+      <ul class="icons-wrap mt-3">
+        <li class="foot_icon icons1"><i class="fa-brands fa-facebook"></i></li>
+        <li class="foot_icon icons2"><i class="fa-brands fa-twitter"></i></li>
+        <li class="foot_icon icons3"><i class="fa-brands fa-tiktok"></i></li>
+        <li class="foot_icon icons4"><i class="fa-regular fa-face-smile"></i></li>
+      </ul>
+
+      <p class="mt-3">홈페이지 이용약관 | <span>개인정보처리방침</span> | 영상정보처리기기운영방침 | 멤버스카드이용약관 </p>
+
+
+
+      <ul class="text">
+        <li>(주)커피빈코리아 대표이사 감종철</li>
+        <li>사업자등록번호 120-86-07029</li>
+        <li>통신판매업신고 제 2010-서울강남-00560</li>
+        <li>서울시 강남구 봉은사로 99길 7</li>
+        <li>고객센터 02-1577-4708 (09:00 - 18:00)</li>
+        <li>E-mail : cbk@coffeebeankorea.com</li>
+        <li>ⓒ 2021.The Coffefe Bean. All rights reserved.</li>
+      </ul>
+    </footer>
+    <div class="btn-wrap">
+      <button class="top-button hide-button">
+        TOP
+      </button>
+    </div>
+  </div>
+
+</body>
+
+</html>

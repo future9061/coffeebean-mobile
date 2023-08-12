@@ -103,18 +103,7 @@ slide2Btn.forEach((elem, idx) => {
 
 
 
-//pwa 설치 버튼
-var deferredPrompt;
 
-window.addEventListener('beforeinstallprompt', function (e) {
-  console.log('beforeinstallprompt Event fired');
-  e.preventDefault();
-
-  // Stash the event so it can be triggered later.
-  deferredPrompt = e;
-
-  return false;
-});
 
 
 /*서비스워커 등록 */
@@ -125,4 +114,23 @@ if ('serviceWorker' in navigator) {
   } catch (error) {
     console.log("Service Worker Registration Failed");
   }
+}
+
+
+/*설치 버튼 */
+
+let deferredPrompt
+
+window.addEventListener('beforeinstallprompt', event => {
+  event.preventDefault()
+  deferredPrompt = event
+})
+
+const installApp = () => {
+  if (!deferredPrompt) {
+    alert('이미 앱이 설치되어 있거나 앱을 설치할 수 없는 환경입니다')
+    return
+  }
+
+  deferredPrompt.prompt()
 }

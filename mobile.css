@@ -421,3 +421,17 @@ aside li {
 .w-bg {
   background-color: white;
 }
+
+.installbtn {
+  border: none;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 18px;
+  color: white;
+  background-color: #7c51a1;
+  position: fixed;
+  bottom: 120px;
+  right: 50px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.6);
+}

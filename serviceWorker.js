@@ -1,9 +1,9 @@
-
 /*로컬 캐시에서 모든 에셋을 사용하게 하기 위해 에셋 경로 동적으로 선ㄴ언 */
 const staticAssets = [
   './',
   './mobile.css',
   './mobile.js',
+  './package.json',
   './img/1.jpg',
   './img/2-1.jpg',
   './img/2-2.jpg',
@@ -29,12 +29,12 @@ const staticAssets = [
   './img/5.jpg',
   './img/6.jpg',
   './img/banner.jpg',
-  './img/close.jpg',
+  './img/close.png',
   './img/favicon.png',
   './img/icon1.png',
   './img/icon2.png',
   './img/logo_93_69.png',
-  './img/main_img01.jpg',
+  './img/main-img01.jpg',
   './img/pwaicon.png',
   './img/pwaicon192.png',
   './img/pwaicon512.png',
@@ -44,6 +44,8 @@ self.addEventListener('install', async event => {
   const cache = await caches.open('static-cache');
   cache.addAll(staticAssets);
 });
+
+
 
 /*캐시 fetch */
 self.addEventListener('fetch', event => {
@@ -73,3 +75,4 @@ async function newtorkFirst(req) {
     return await cache.match(req);
   }
 }
+

@@ -1,3 +1,7 @@
+html {
+  overflow-x: hidden;
+}
+
 body {
   margin: auto;
   padding: 0;
@@ -29,7 +33,7 @@ header {
   top: 0;
   background-color: white;
   z-index: 1;
-
+  position: fixed;
   width: 100%;
   min-width: 320px;
 }
@@ -177,95 +181,46 @@ header {
 }
 
 .purple {
-  height: 1000px;
   background-color: #7c51a1;
   padding: 1px;
+  text-align: center;
 }
 .purple_h5 {
   color: white;
   font-weight: 500;
   text-align: center;
-  letter-spacing: -0.06em;
 }
-.img_wrap {
+
+.purple > ul {
+  width: 90%;
+  margin: auto;
   display: flex;
-  margin: 0;
-  padding: 0;
-  position: relative;
-  left: calc(50% - 298px);
-  top: 20px;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-self: center;
 }
+
 .purple li {
-  width: 199px;
-  height: 199px;
+  width: 33%;
+  flex-shrink: 0;
+  flex-grow: 0;
 }
 
-.mini1 {
-  background: url(img/3-1.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-.mini2 {
-  background: url(img/3-2.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-.mini3 {
-  background: url(img/3-3.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-.mini4 {
-  background: url(img/3-4.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-.mini5 {
-  background: url(img/3-5.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-.mini6 {
-  background: url(img/3-6.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-.mini7 {
-  background: url(img/3-7.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-
-.mini8 {
-  background: url(img/3-8.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-
-.mini9 {
-  background: url(img/3-9.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-
-.mini10 {
-  background: url(img/3-10.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-
-.mini11 {
-  background: url(img/3-11.jpg) no-repeat;
-  background-size: 199px 199px;
-}
-
-.mini12 {
-  background: url(img/3-12.jpg) no-repeat;
-  background-size: 199px 199px;
+.purple li img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .purple button {
-  width: 300px;
-  height: 30px;
+  padding: 5px 20px;
   background-color: #f38200;
   border: none;
   color: white;
   font-weight: 500;
   letter-spacing: -0.1em;
-  position: relative;
-  left: calc(50% - 150px);
-  top: 50px;
   border-radius: 5px;
+  margin: 20px;
 }
 footer {
   background-color: #e2e2e2;
@@ -298,6 +253,7 @@ footer {
 
 footer p {
   font-size: 0.8em;
+  word-break: keep-all;
 }
 
 footer span {
@@ -313,6 +269,8 @@ footer span {
   width: 100%;
   height: 8px;
   background-color: #e2e2e2;
+  position: fixed;
+  z-index: 1;
 }
 .progress-bar {
   width: 0%;
@@ -327,6 +285,7 @@ main {
 .img1 {
   width: 100%;
   height: auto;
+  margin-top: 60px;
 }
 
 .img1 img {
@@ -344,8 +303,8 @@ main {
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.5);
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 50px;
+  right: 50px;
   color: white;
   transition: 0.3s;
 }

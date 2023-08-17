@@ -28,12 +28,14 @@ https://musical-daifuku-70205f.netlify.app/
 ## 🚫 pwa 변환 과정에서 겪었던 에러
 
 ✔ **manifest 옵션 설정 에러**
+
 <img src="https://github.com/future9061/coffeebean-mobile/assets/132829711/daced97e-168c-4ba9-9737-dad05b601db7" > <br />
 manifest 옵션을 저장하고 application에서 확인했을 때 발견한 에러이다. pwa 처음이여서 필수적으로 192px, 512px의 아이콘이 필요한 걸 몰랐다. <br /> 때문에 이미지 수정 후 icons 배열에 옵션을 추가하고 해결했다.
 
 <br />
 
 ✔ **assets 경로 오타**
+
 <img src="https://github.com/future9061/coffeebean-mobile/assets/132829711/4a9c7f62-4998-4e80-a8b1-f69990ff746f" > <br />
 
 pwa는오프라인에서 사용하기 위해 workspace 파일에서 모든 assets의 경로를 담은 배열을 cache에게 전달해주는데 그 과정에서 생긴 오류이다. <br />
@@ -42,6 +44,7 @@ pwa는오프라인에서 사용하기 위해 workspace 파일에서 모든 asset
 <br />
 
 ✔ **pwa 설치 팝업이 안뜸!**  
+
 <img src="https://github.com/future9061/coffeebean-mobile/assets/132829711/bb77a0e6-def8-4430-9cb6-5c1b8af01cf9" > <br />
 pc에서는 멀쩡히 뜨는 설치 팝업이 모바일에서는 나오지 않았다. <br />
 당연히 모바일에 앱이 저장되지도 않았다. <br /> 설치 팝업이 뜨는 조건이 여러가지가 있고 브라우저 마다 차이도 있기 때문에 beforeinstallprompt 이벤트로 설치 버튼을 만들어 설치를 유도했다. <br />

@@ -22,8 +22,16 @@ https://musical-daifuku-70205f.netlify.app/
       
    </p>
 </div>
+<br>
+
+## 📦 개발 환경
+
+- **editor** : <img src="https://img.shields.io/badge/VisualStudioCode-007ACC?style=flat-square&logo=visualstudiocode&logoColor=white"/>
+- **language** : <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=HTML5&logoColor=white"/> <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=CSS3&logoColor=white"/> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=flat-square&logo=javascript&logoColor=white"/>
+- **skill** : <img src="https://img.shields.io/badge/pwa-5A0FC8?style=flat-square&logo=pwa&logoColor=white"/>
 
 <br />
+
 
 ## 🚫 pwa 변환 과정에서 겪었던 에러
 
